@@ -125,7 +125,7 @@ Ziel ist nicht Vorhersageoptimierung, sondern die Analyse relativer Feature-Bede
 ## 8. Projektstruktur
 
 ```text
-Rookies/
+Rookies2526/
 ├── data/
 │   ├── raw/
 │   └── processed/
