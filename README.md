@@ -1,85 +1,89 @@
 # 🏀 Three-Point Inflation in the NBA  
-### Where is the limit?
+## Where is the limit?
 
-## 📌 Projektübersicht
-In den letzten Jahrzehnten hat sich der Spielstil in der NBA grundlegend verändert.  
-Insbesondere der **Drei-Punkte-Wurf** hat seit Mitte der 2010er-Jahre massiv an Bedeutung gewonnen.  
-Teams nehmen immer mehr Dreier – doch bleibt dieser Trend langfristig effizient und erfolgsentscheidend?
+## 1. Projektbeschreibung
+In den letzten Jahrzehnten hat sich der Spielstil in der NBA stark verändert.  
+Besonders der Drei-Punkte-Wurf hat seit Mitte der 2010er-Jahre massiv an Bedeutung gewonnen.  
+Während Teams immer mehr Dreier nehmen, stellt sich die Frage, ob dieses steigende Wurfvolumen langfristig effizient bleibt oder ob ein Sättigungspunkt erreicht wird.
 
-Ziel dieses Projekts ist es, die Entwicklung des Drei-Punkte-Wurfs **historisch, statistisch und mithilfe von Machine Learning** zu analysieren und zu beantworten:
-
-> **Wo liegt das Limit der Drei-Punkte-Inflation in der NBA?**
+Dieses Projekt untersucht die Entwicklung des Drei-Punkte-Wurfs **historisch**, **statistisch** und **mithilfe von Machine Learning**.
 
 ---
 
-## 🎯 Forschungsfragen
-- Wie hat sich das Drei-Punkte-Volumen (3PA) seit 1996 entwickelt?
-- Gibt es einen Effizienzverlust bei steigender Wurfanzahl?
-- Lässt sich ein struktureller Wendepunkt (ca. 2014/15–2015/16) identifizieren?
-- Ist der Drei-Punkte-Wurf im Jahr 2026 noch der wichtigste Prädiktor für Teamerfolg?
+## 2. Ziel & Forschungsfrage
+**Zentrale Frage:**  
+> Wo liegt das Limit der Drei-Punkte-Inflation in der NBA?
+
+Unterfragen:
+- Wie hat sich das Drei-Punkte-Volumen seit 1996 entwickelt?
+- Gibt es einen Effizienzverlust bei steigendem Wurfvolumen?
+- Lässt sich ein struktureller Wendepunkt um 2014/15–2015/16 erkennen?
+- Ist der Drei-Punkte-Wurf im Jahr 2026 noch der wichtigste Erfolgsfaktor für Teams?
 
 ---
 
-## 📊 Datengrundlage
-- **Ebene:** Team × Saison  
+## 3. Datengrundlage
+- **Analyseebene:** Team × Saison  
 - **Zeitraum:** 1996–2026  
-- **Variablen (Auswahl):**
-  - 3PA, 3PM, 3P%
-  - FG%, FT%
-  - Wins / Winning Percentage
-- **Quelle:** Offizielle NBA-Team-Season-Statistiken  
-- Alle Kennzahlen werden **pro Spiel** betrachtet.
+- **Quelle:** Offizielle NBA-Team-Saisonstatistiken  
+- **Kennzahlen:**
+  - Drei-Punkte-Würfe: 3PA, 3PM, 3P%
+  - Weitere Effizienzmaße: FG%, FT%
+  - Team-Erfolg: Wins / Winning Percentage
+
+Alle Kennzahlen werden **pro Spiel** berechnet, um die Vergleichbarkeit zwischen Saisons sicherzustellen.
 
 ---
 
-## 🧹 Datenaufbereitung
-Die Daten wurden vereinheitlicht und bereinigt durch:
-- Standardisierung der Saisons (z. B. `2015/16`)
+## 4. Datenaufbereitung
+Die Daten wurden bereinigt und vereinheitlicht:
+- Standardisierung der Saisonformate (z. B. 2015/16)
 - Vereinheitlichung von Teamnamen (Franchise-Wechsel)
-- Umgang mit verkürzten Saisons (Lockout, COVID)
-- Behandlung fehlender Werte in aktuellen Saisons
-- Umrechnung auf **Per-Game-Basis**
+- Berücksichtigung verkürzter Saisons (Lockout, COVID)
+- Umgang mit fehlenden Werten in aktuellen Saisons
+- Umrechnung aller Kennzahlen auf **Per-Game-Basis**
 
-Ergebnis ist eine **bereinigte Master-Tabelle**, geeignet für Statistik und Machine Learning.
+Das Ergebnis ist eine **bereinigte Master-Tabelle**, die für statistische Analysen und Machine Learning geeignet ist.
 
 ---
 
-## 🧠 Feature Engineering: True 3PT%
-Neben der klassischen 3P% wird eine **Bayes-adjustierte Effizienzkennzahl** verwendet:
+## 5. Feature Engineering: True 3PT%
+Neben der klassischen Drei-Punkte-Quote (3P%) wird eine bereinigte Effizienzkennzahl verwendet:
 
-**True 3PT%**
-- reduziert Verzerrungen durch geringe Wurfanzahl
-- nutzt Shrinkage Richtung Ligadurchschnitt
-- verhindert Überbewertung kleiner Stichproben
+**True 3PT% (Bayes-adjustiert)**  
+- reduziert Verzerrungen durch kleine Stichproben  
+- zieht extreme Quoten in Richtung Ligadurchschnitt  
+- erlaubt fairere Vergleiche zwischen Teams  
 
 Diese Kennzahl stellt einen zentralen methodischen Mehrwert des Projekts dar.
 
 ---
 
-## 📈 Methodik
+## 6. Methodik
 
-### 1️⃣ Deskriptive Analyse
-- Zeitreihen (1996–2026) für:
-  - 3PA per Game
+### 6.1 Deskriptive Analyse
+- Zeitreihenanalyse von 1996 bis 2026
+- Untersuchung der Entwicklung von:
+  - 3PA pro Spiel
   - 3P%
   - True 3PT%
-- Markierung des strukturellen Wendepunkts um 2015/16
+- Markierung eines strukturellen Wendepunkts um 2015/16
 
-### 2️⃣ Statistischer Hypothesentest
-Vergleich:
-- Saison **2015/16** vs. **2025/26**
+### 6.2 Statistische Hypothesentests
+Vergleich der Saisons:
+- **2015/16** (Beginn der modernen Drei-Punkte-Ära)
+- **2025/26** (aktuelle NBA)
 
 Tests:
 - t-Test auf klassische 3P%
 - t-Test auf True 3PT%
 
-Ziel:
-- Unterscheidung zwischen Volumen-Effekt und realem Effizienzverlust
+Ziel ist die Unterscheidung zwischen einem reinen Volumen-Effekt und einer realen Effizienzveränderung.
 
-### 3️⃣ Machine Learning
-- **Zielvariable:** Wins oder Winning Percentage
+### 6.3 Machine Learning
+- **Zielvariable:** Wins oder Winning Percentage  
 - **Features:**
-  - 3PA per Game
+  - 3PA pro Spiel
   - 3P%
   - True 3PT%
   - FG%
@@ -87,8 +91,9 @@ Ziel:
 - **Modelle:**
   - Lineare Regression (Baseline)
   - Nichtlineares Modell (z. B. Random Forest)
-- Analyse der Feature Importance
+- Analyse der Modellgüte und Feature Importance
 
 ---
 
-## 🧩 Projektstruktur
+## 7. Projektstruktur
+
