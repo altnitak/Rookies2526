@@ -114,7 +114,6 @@ Zur Bewertung der praktischen Relevanz des Drei-Punkte-Wurfs für den Teamerfolg
 
 **Modelle:**
 - Lineare Regression (Baseline)
-- Nichtlineares Modell (z. B. Random Forest)
 
 Ziel ist nicht Vorhersageoptimierung, sondern die Analyse relativer Feature-Bedeutungen.
 
