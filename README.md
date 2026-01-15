@@ -2,21 +2,21 @@
 ## Where is the limit?
 
 ## 1. Projektbeschreibung
-In den letzten Jahrzehnten hat sich der Spielstil in der NBA stark verändert.  
+In den letzten Jahrzehnten hat sich Basketball und der gesamte Spielstil in der NBA stark verändert.  
 Insbesondere der Drei-Punkte-Wurf hat seit Mitte der 2010er-Jahre massiv an Bedeutung gewonnen.  
 Während Teams kontinuierlich mehr Dreier pro Spiel nehmen, stellt sich die Frage, ob dieses steigende Wurfvolumen langfristig effizient bleibt oder ob ein Sättigungspunkt erreicht wird.
 
-Dieses Projekt analysiert die Entwicklung des Drei-Punkte-Wurfs sauber entlang der gesamten Datenpipeline – von der Datenaufbereitung über statistische Tests bis hin zu ergänzenden Machine-Learning-Analysen.
+Unser Projekt analysiert die Entwicklung des Drei-Punkte-Wurfs mit offiziellen Daten aller NBA-Teams seit 1996/97 bis heute. Von Datenaufbereitung über statistische Tests bis hin zu einer Machine-Learning Analyse.
 
 ---
 
 ## 2. Ziel & Forschungsfrage
 
 **Zentrale Forschungsfrage:**  
-> *Wo liegt das Limit der Drei-Punkte-Inflation in der NBA?*
+> *Wo liegt das Limit der Drei-Punkte-Inflation in der NBA und wie hat sich das Spiel geändert?*
 
-Konkret operationalisiert durch folgende Teilfragen:
-- Wie hat sich das Drei-Punkte-Volumen (3PA) seit 1996 entwickelt?
+Wir teilen hierfür unser Projekt in folgende Teilfragen:
+- Wie hat sich die Anzahl der Drei-Punkte-Versuche (3PA) seit 1996 entwickelt?
 - Gibt es Hinweise auf einen Effizienzverlust bei steigendem Wurfvolumen?
 - Lässt sich ein struktureller Wendepunkt um 2014/15–2015/16 identifizieren?
 - Ist der Drei-Punkte-Wurf im Jahr 2025/26 weiterhin ein zentraler Erfolgsfaktor für Teams?
@@ -45,15 +45,14 @@ Alle Kennzahlen werden auf **Per-Game-Basis** berechnet, um Vergleichbarkeit zwi
 
 Die Daten wurden umfassend bereinigt und vereinheitlicht:
 - Standardisierung der Saisonformate (z. B. 2015/16)
-- Konsolidierung von Teamnamen (Franchise-Wechsel)
-- Berücksichtigung verkürzter Saisons (Lockout, COVID-19)
 - Umgang mit fehlenden Werten in laufenden Saisons
-- Aggregation auf **Team-Saison-Ebene**
+- Berechnung statistischer Kennzahlen auf Basis der Rohdaten
+  
 
-Die ursprünglich per Web Scraping erhobenen Rohdaten wurden unmittelbar nach der Erhebung konsolidiert und bereinigt.  
-Daher liegen im Repository ausschließlich die bereinigten und aggregierten Datensätze vor; der historische OpenDataBay-Datensatz liegt unverändert im Ordner `data/raw/` vor.
+Die ursprünglich per Web Scraping erhobenen Rohdaten wurden unmittelbar nach der Erhebung zusammengeführt und bereinigt.  
+Daher liegen im Repository ausschließlich die bereinigten und gesäuberten Datensätze vor. Der ursprüngliche OpenDataBay-Datensatz liegt unverändert im Ordner `data/raw/`.
 
-Das Ergebnis ist eine konsistente, analysereife Master-Tabelle.
+Das Ergebnis, womit schließlich auch gearbeitet wurde ist eine konsistente, lückenfreie Master-Tabelle.
 
 ---
 
