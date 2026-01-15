@@ -47,11 +47,10 @@ Die Daten wurden umfassend bereinigt und vereinheitlicht:
 - Standardisierung der Saisonformate (z. B. 2015/16)
 - Umgang mit fehlenden Werten in laufenden Saisons
 - Berechnung statistischer Kennzahlen auf Basis der Rohdaten
-- Rohdaten in den Codes von Team x Spiel auf Team x Saison aggregiert
-  
 
 Die ursprünglich per Web Scraping erhobenen Rohdaten wurden unmittelbar nach der Erhebung zusammengeführt und bereinigt.  
-Daher liegen im Repository ausschließlich die bereinigten und gesäuberten Datensätze vor. Der ursprüngliche OpenDataBay-Datensatz liegt unverändert im Ordner `data/raw/`.
+Daher liegen im Repository ausschließlich die bereinigten und gesäuberten Datensätze vor. Der ursprüngliche OpenDataBay-Datensatz liegt unverändert im Ordner `data/raw/`. 
+Alle genutzten und gesäuberten Daten wurden in den Codes von Team x Spiel auf Team x Saison aggregiert. 
 
 Das Ergebnis, womit schließlich auch gearbeitet wurde ist eine konsistente, lückenfreie Master-Tabelle.
 
