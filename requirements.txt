@@ -3,5 +3,3 @@ numpy
 matplotlib
 scipy
 scikit-learn
-nba_api
-time
