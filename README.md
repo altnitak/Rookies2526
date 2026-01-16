@@ -45,7 +45,7 @@ Wir teilen hierfür unser Projekt in folgende Teilfragen:
 
 ---
 
-## 4. Datenaufbereitung
+## 4. Datenaufbereitung (Scraping, Cleaning)
 
 Die Daten wurden umfassend bereinigt und vereinheitlicht:
 - Standardisierung der Saisonformate (z. B. 2015/16)
