@@ -29,7 +29,7 @@ Wir teilen hierfür unser Projekt in folgende Teilfragen:
 
 ---
 
-## 3. Datengrundlage
+## 3. Datengrundlage & Quellen
 
 - **Analyseebene:** Team × Saison  
 - **Zeitraum:** 1996–2026  
