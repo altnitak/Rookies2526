@@ -1,7 +1,7 @@
 # Slides
 
 Die finale Präsentation zu diesem Projekt wird nach der Abgabe des
-GitHub-Repositories erstellt und hier ergänzt.
+GitHub-Repositories hier ergänzt.
 
 **Geplantes Upload-Datum:** 19.01.2026
 
