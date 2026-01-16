@@ -7,6 +7,7 @@ Wir haben uns als Gruppe für die NBA und speziell den Drei-Punkte-Wurf entschie
 In den letzten Jahrzehnten hat sich Basketball und der gesamte Spielstil der NBA stark verändert.  
 Insbesondere der Drei-Punkte-Wurf hat seit Mitte der 2010er-Jahre massiv an Bedeutung gewonnen.  
 Während Teams kontinuierlich mehr Dreier pro Spiel werfen, stellt sich die Frage, ob dieses steigende Wurfvolumen langfristig effizient bleibt oder ob ein Sättigungspunkt erreicht wird.
+
 Gleichzeitig bietet der Drei-Punkte-Bereich einen klaren Mehrwert für eine datenbasierte Ausarbeitung: Man kann Trends über viele Jahre erkennen, Teams sinnvoll vergleichen und überprüfen, ob höhere Volumina tatsächlich mit Erfolg zusammenhängen. Insgesamt war es für uns die beste Kombination aus persönlichem Interesse, aktueller Relevanz im Sport und einer guten Grundlage für eine saubere statistische Analyse.
 
 
