@@ -164,7 +164,9 @@ Rookies2526/
 │   ├── 02_trend_analysis.ipynb
 │   ├── 03_true_3pt.ipynb
 │   ├── 04_hypothesis_tests.ipynb
-│   └── 05_modeling.ipynb
+|   ├── 05_modeling.ipynb
+│   └── 06_machine_learning.ipynb
+|
 ├── reports/
 │   └── figures/
 ├── slides/
